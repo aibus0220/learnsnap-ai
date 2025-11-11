@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LearnSnap AI – Master Skills in 5 Minutes</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root { --p: #10b981; --d: #0a0a0f; --c: #1a1a2e; }
+    body { font-family: 'Inter', sans-serif; background: var(--d); color: #fff; margin: 0; }
+    .hero { background: linear-gradient(135deg, #667eea, #764ba2); padding: 100px 20px; text-align: center; }
+    .badge { background: #ffd700; color: #000; padding: 8px 16px; border-radius: 25px; font-weight: 600; }
+    .container { max-width: 900px; margin: 0 auto; padding: 40px 20px; }
+    .card { background: var(--c); border-radius: 16px; padding: 32px; margin: 24px 0; box-shadow: 0 4px 20px rgba(0,0,0,0.3); }
+    .price { font-size: 2.5rem; color: var(--p); font-weight: 700; }
+    .btn { background: var(--p); color: #000; padding: 16px 32px; border-radius: 50px; text-decoration: none; font-weight: 600; display: inline-block; }
+    .btn:hover { background: #059669; }
+    .lead-magnet { background: #16213e; text-align: center; padding: 24px; border-radius: 12px; }
+  </style>
+</head>
+<body>
+  <div class="hero">
+    <h1>Master <span class="badge">2025 Skills</span> in 5 Minutes</h1>
+    <p>AI-generated micro-courses • Daily drops</p>
+    <a href="#today" class="btn">Get Today’s Course – $19</a>
+  </div>
+  <div class="container">
+    <div id="today" class="card">
+      <h2>Today’s Skill: <span id="title">Loading...</span></h2>
+      <p>Includes: 5-min video • PDF • Quiz</p>
+      <p class="price">$19</p>
+      <a href="https://learnsnap.gumroad.com/l/today" class="btn">Buy Now</a>
+    </div>
+    <div class="lead-magnet">
+      <h3>Free: 2025 Skills Quiz</h3>
+      <p>3 questions → Your top skill + free mini-course</p>
+      <a href="https://forms.gle/YOUR_QUIZ" class="btn" style="background:#fff;color:#000;">Take Quiz</a>
+    </div>
+    <div class="card" style="text-align:center;">
+      <h3>All 30 Courses + Daily New</h3>
+      <p class="price">$97 one-time</p>
+      <a href="https://learnsnap.gumroad.com/l/bundle" class="btn">Get Bundle</a>
+    </div>
+    <div class="card">
+      <h3>Skill Club – $9/mo</h3>
+      <p>Weekly exclusives + AI tools</p>
+      <a href="https://learnsnap.gumroad.com/l/club" class="btn">Join Club</a>
+    </div>
+  </div>
+  <script>
+    const titles = ['AI Literacy', 'Prompt Engineering', 'Machine Learning', 'Data Analysis', 'Cybersecurity', 'Cloud Computing', 'Digital Marketing', 'SEO', 'Social Media', 'UI/UX', 'Web Dev', 'No-Code', 'Video Editing', 'Content', 'Copywriting', 'Finance', 'Speaking', 'Thinking', 'EQ', 'Branding', 'Automation', 'Git', 'Docker', 'Terraform', 'Python', 'AI Tools', 'Data Viz', 'Conflict', 'Adaptability', 'Analytics'];
+    const today = new Date().getDate() - 1;
+    document.getElementById('title').innerText = titles[today] + " in 5 Min";
+  </script>
+</body>
+</html>
